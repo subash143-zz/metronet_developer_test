@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Team Introduction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./introduction.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width: 400px;width: 33%;">
+        <form id="introduction">
+            <div class="form-group required">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group required">
+                <label for="fun-fact">Fun Fact</label>
+                <textarea required class="form-control" rows="5" id="fun-fact"></textarea>
+            </div>
+            <div class="alert alert-danger" id="error" style="display: none;">
+                
+            </div>
+            <button type="button" onclick="introduceMember()" class="btn btn-success">Introduce!</button>
+        </form>
+        <div id="display-intro">
+            <div class="alert alert-success intro">
+            </div>
+            <button type="button" onclick="introduceNext()" class="btn btn-success">Introduce next</button>
+        </div>
+    </div>
+</body>
+<script src="./introduction.js"></script>
+</html>

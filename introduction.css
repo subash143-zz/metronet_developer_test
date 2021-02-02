@@ -1,0 +1,27 @@
+.form-group.required label:after {
+    content:" *";
+    color:red;
+  }
+
+  form{
+      margin-bottom: 10px;
+  }
+
+  html, body {
+    height:100%;
+    margin:0;
+  }
+
+body {
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: azure;
+}
+
+.container{
+  background-color: white;
+  padding:20px;
+  box-shadow: 0px 0px 20px gray;
+}
